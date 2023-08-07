@@ -4,7 +4,6 @@ import 'package:rick_and_morty_challenge/bloc/episode/episodes_list_bloc.dart';
 import 'package:rick_and_morty_challenge/models/episode.dart';
 import 'package:rick_and_morty_challenge/routes/routes_app.dart';
 import 'package:rick_and_morty_challenge/screens/widgets/episode_card.dart';
-import 'package:rick_and_morty_challenge/screens/widgets/skeleton_box.dart';
 import 'package:rick_and_morty_challenge/screens/widgets/skeleton_list_item_card.dart';
 import 'package:rick_and_morty_challenge/utils/auth.dart';
 

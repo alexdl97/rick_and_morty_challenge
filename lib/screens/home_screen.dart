@@ -1,9 +1,7 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty_challenge/routes/routes_app.dart';
 import 'package:rick_and_morty_challenge/screens/widgets/menu_option.dart';
-import 'package:rick_and_morty_challenge/screens/widgets/skeleton_box.dart';
 import 'package:rick_and_morty_challenge/utils/auth.dart';
 
 class HomeScreen extends StatefulWidget {

@@ -20,6 +20,11 @@ La app cuenta con:
     <img src="screenshots/locations.png" width="150" height="300" style="padding: 16px">
 </div>
 
+## Requrimientos
+    Flutter versión 3.10.6
+    Android SDK version 33.0.0
+
+
 ## Instalación
 1. Clonar el repositorio
    ```sh
@@ -29,3 +34,9 @@ La app cuenta con:
    ```sh
    flutter pub rick_and_morty_challenge
    ```
+
+## Test Unitarios
+Para correr los test unitarios ejecute
+```sh
+flutter test
+```

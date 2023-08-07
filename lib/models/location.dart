@@ -1,4 +1,8 @@
-class LocationListModel {
+// ignore_for_file: must_be_immutable
+
+import 'package:equatable/equatable.dart';
+
+class LocationListModel extends Equatable {
   int? count;
   int? pages;
   String? next;
@@ -26,9 +30,12 @@ class LocationListModel {
       }
     }
   }
+
+  @override
+  List<Object?> get props => [count, pages, next, prev, locations];
 }
 
-class LocationModel {
+class LocationModel extends Equatable {
   int? id;
   String? name;
   String? type;
@@ -51,4 +58,7 @@ class LocationModel {
     dimension = json.containsKey('dimension') ? json['dimension'] : '';
     numberOfResidents = residentsList.length;
   }
+
+  @override
+  List<Object?> get props => [id, name, type, dimension, numberOfResidents];
 }

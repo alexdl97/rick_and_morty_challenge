@@ -16,7 +16,6 @@ class CharactersScreen extends StatefulWidget {
 
 class _CharactersScreenState extends State<CharactersScreen> {
   late CharactersListBloc _charactersListBloc;
-  Size? _size;
   late ScrollController _scrollController;
 
   @override
@@ -43,7 +42,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
 
   @override
   Widget build(BuildContext context) {
-    _size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Characters'),

@@ -1,4 +1,8 @@
-class EpisodeListModel {
+// ignore_for_file: must_be_immutable
+
+import 'package:equatable/equatable.dart';
+
+class EpisodeListModel extends Equatable {
   int? count;
   int? pages;
   String? next;
@@ -26,9 +30,12 @@ class EpisodeListModel {
       }
     }
   }
+
+  @override
+  List<Object?> get props => [count, pages, next, prev, episodes];
 }
 
-class EpisodeModel {
+class EpisodeModel extends Equatable {
   int? id;
   String? name;
   String? airDate;
@@ -55,4 +62,7 @@ class EpisodeModel {
     characters = charactersList.map((e) => e as String).toList();
     url = json.containsKey('url') ? json['url'] : '';
   }
+
+  @override
+  List<Object?> get props => [id, name, airDate, episode, characters, url];
 }

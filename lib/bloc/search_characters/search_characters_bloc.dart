@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import 'package:rick_and_morty_challenge/models/character.dart';
 import 'package:rick_and_morty_challenge/services/character_service.dart';
 

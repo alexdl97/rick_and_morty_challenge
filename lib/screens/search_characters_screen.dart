@@ -34,7 +34,6 @@ class _SearchCharactersScreenState extends State<SearchCharactersScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Column(
         mainAxisSize: MainAxisSize.max,
@@ -110,10 +109,10 @@ class _SearchCharactersScreenState extends State<SearchCharactersScreen> {
                     child: ListView.builder(
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
+                        return const Padding(
+                          padding: EdgeInsets.all(8.0),
                           child: Row(
-                            children: const [
+                            children: [
                               SkeletonBox(
                                 height: 50,
                                 width: 50,
